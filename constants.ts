@@ -33,40 +33,56 @@ export const NAV_LINKS: NavLink[] = [
 
 export const PROMOTIONS: Promotion[] = [
   {
+    title: 'Soothe Your Stomach, Enjoy Bali',
+    icon: 'bali-belly',
+    ivType: 'BALI BELLY IV',
+    ivLabel: 'STOMACH RELIEF',
+    imageUrl: 'https://images2.imgbox.com/c5/ba/GEafaKHx_o.jpg',
+  },
+  {
     title: 'Ease Your Acid, Reclaim Comfort',
     icon: 'acid-reflux',
     ivType: 'GERD IV',
     ivLabel: 'ACID RELIEF',
+    imageUrl: 'https://images2.imgbox.com/87/2a/CgHXWB7S_o.jpg',
   },
   {
     title: 'Reset Your Clock, Recharge Your Mind',
     icon: 'jetlag',
     ivType: 'JETLAG IV',
     ivLabel: 'SLEEP & RESET',
+    imageUrl: 'https://images2.imgbox.com/81/f7/SNpdSZCk_o.jpg',
   },
   {
     title: 'Detox Your Body, Rehydrate Your Brain',
     icon: 'hangover',
     ivType: 'HANGOVER IV',
     ivLabel: 'POST-PARTY FIX',
+    imageUrl: 'https://images2.imgbox.com/1e/20/aMguP9vX_o.jpg',
   },
 ];
 
 export const THERAPY_PACKAGES: ServicePackage[] = [
     {
+        headline: 'Beat.\nBali Belly.\nFast.',
         title: 'BALI BELLY PACKAGES',
         description: 'Soothe and recover from traveler\'s stomach issues with our specialized IV therapy, designed to rehydrate and restore balance.',
-        icon: 'bali-belly'
+        icon: 'bali-belly',
+        imageUrl: 'https://images2.imgbox.com/c5/ba/GEafaKHx_o.jpg'
     },
     {
+        headline: 'Hydrate.\nDetox.\nBounce Back.',
         title: 'IMMUNE BOOSTER PACKAGES',
         description: 'Strengthen your body’s defenses with a powerful blend of vitamins and antioxidants to help you stay healthy and vibrant.',
-        icon: 'immune-booster'
+        icon: 'immune-booster',
+        imageUrl: 'https://images2.imgbox.com/d3/55/A9ZvstBm_o.jpg'
     },
     {
+        headline: 'Refresh Your\nBody, Restore\nYour Mind',
         title: 'HANGOVER PACKAGES',
         description: 'Recover effectively from the night before with our basic, standard, or premium Hangover IV packages, perfect for rapid rehydration at your home or hotel.',
-        icon: 'hangover-package'
+        icon: 'hangover-package',
+        imageUrl: 'https://images2.imgbox.com/1e/20/aMguP9vX_o.jpg'
     }
 ];
 

@@ -15,13 +15,6 @@ const PatientCenteredIcon = () => <svg className="w-12 h-12 text-cyan-600" fill=
 const AboutSection = (): React.ReactNode => {
   return (
     <div id="about" className="bg-white">
-      <section className="bg-cyan-700 text-white text-center py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold">About Mounty Health Center</h1>
-          <p className="mt-4 text-lg text-cyan-200 max-w-3xl mx-auto">Your Trusted Partner in Health and Wellness, Providing Compassionate Medical Services Across Bali</p>
-        </div>
-      </section>
-
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-cyan-800 mb-6">Our Mission</h2>

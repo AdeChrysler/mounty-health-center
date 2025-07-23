@@ -9,12 +9,15 @@ export interface Promotion {
   icon: string;
   ivType: string;
   ivLabel: string;
+  imageUrl?: string;
 }
 
 export interface ServicePackage {
+  headline: string;
   title: string;
   description: string;
   icon: string;
+  imageUrl?: string;
 }
 
 export interface NewsArticle {

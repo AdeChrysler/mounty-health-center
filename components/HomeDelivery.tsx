@@ -14,8 +14,8 @@ const HomeDelivery = (): React.ReactNode => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 text-left">
-            <h2 className="text-4xl font-bold text-cyan-800 mb-4">FREE HOME DELIVERY</h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-4">FREE HOME DELIVERY</h2>
+            <p className="text-base sm:text-lg text-gray-600 mb-8">
               Wellness care should be accessible. That's why Mounty Health Center, Bali's leading mobile wellness service, brings professional support directly to you – with free delivery. Experience premium wellness care at your villa or hotel, with zero transportation fees, anywhere in Bali.
             </p>
             <a
@@ -32,8 +32,8 @@ const HomeDelivery = (): React.ReactNode => {
               <div className="text-center text-cyan-800">
                   <HomeCareIcon />
                   <h3 className="text-2xl font-semibold tracking-widest mt-4">SPECIAL OFFER</h3>
-                  <p className="text-5xl font-bold my-2">FREE HOME SERVICE</p>
-                  <p className="text-2xl font-light tracking-widest">EVERYWHERE!</p>
+                  <p className="text-4xl sm:text-5xl font-bold my-2">FREE HOME SERVICE</p>
+                  <p className="text-xl sm:text-2xl font-light tracking-widest">EVERYWHERE!</p>
               </div>
             </div>
           </div>

@@ -15,20 +15,20 @@ const ICONS: { [key: string]: React.FC } = {
 const Treatments = (): React.ReactNode => {
   return (
     <section id="treatments" className="relative bg-cyan-800 text-white py-20 overflow-hidden">
-        <div className="absolute right-0 top-0 bottom-0 w-2/5 bg-black/10" aria-hidden="true">
+        <div className="absolute right-0 top-0 bottom-0 w-2/5 bg-black/10 hidden lg:block" aria-hidden="true">
             {/* Decorative background element */}
         </div>
         <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-xl">
-                <h2 className="text-4xl font-bold mb-8">WE'VE GOT THE TREATMENTS</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-8">WE'VE GOT THE TREATMENTS</h2>
                 <div className="space-y-4">
                     {TREATMENT_TYPES.map(treatment => {
                         const Icon = ICONS[treatment.icon];
                         return (
-                            <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noopener noreferrer" key={treatment.name} className="flex items-center justify-between bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 group">
-                                <div className="flex items-center gap-6">
+                            <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noopener noreferrer" key={treatment.name} className="flex items-center justify-between bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 group">
+                                <div className="flex items-center gap-4 sm:gap-6">
                                     {Icon && <Icon />}
-                                    <span className="text-xl font-semibold text-gray-800">{treatment.name}</span>
+                                    <span className="text-lg sm:text-xl font-semibold text-gray-800">{treatment.name}</span>
                                 </div>
                                 <ArrowRightCircleIcon />
                             </a>
