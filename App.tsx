@@ -81,11 +81,20 @@ function App(): React.ReactNode {
         }
 
         if (element) {
+          // Make section visible instantly for anchor links, bypassing the fade-in animation.
+          element.classList.add('no-transition');
+          element.classList.add('is-visible');
+
           const headerOffset = 90; // Height of sticky header to prevent content from being hidden
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const offsetPosition = elementPosition - headerOffset;
           
           smoothScrollTo(offsetPosition, 2000); // 2000ms = 2 seconds
+          
+          // Remove the no-transition class after a moment, so that fade-in works for subsequent manual scrolling.
+          setTimeout(() => {
+            element?.classList.remove('no-transition');
+          }, 50);
         } else if (id === 'home' || currentPath === '#') {
           smoothScrollTo(0, 2000); // Scroll to top for home
         }
