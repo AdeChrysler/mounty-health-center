@@ -18,7 +18,7 @@ const MapSection = (): React.ReactNode => {
                     ))}
                 </div>
                 <div className="lg:relative bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-                    <div className="h-96 lg:h-[500px]">
+                    <div className="h-80 lg:h-[450px]">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.8093081594266!2d115.19870897567952!3d-8.709650991339489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2410020033e71%3A0x9c1dfb68c36f45ba!2sApotek%20Mounty%20Health%20Center!5e0!3m2!1sen!2sid!4v1752908824012!5m2!1sen!2sid"
                             className="w-full h-full"

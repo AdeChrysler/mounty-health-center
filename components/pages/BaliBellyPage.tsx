@@ -12,19 +12,19 @@ const BaliBellyPage = () => {
                     Back to All Therapies
                 </a>
             </div>
-            <section className="relative py-24 md:py-32 bg-cover bg-center text-white" style={{ backgroundImage: "url('https://images2.imgbox.com/c5/ba/GEafaKHx_o.jpg')" }}>
+            <section className="relative py-20 md:py-28 bg-cover bg-center text-white" style={{ backgroundImage: "url('https://images2.imgbox.com/c5/ba/GEafaKHx_o.jpg')" }}>
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tight">Bali Belly IV Therapy</h1>
+                    <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight tracking-tight">Bali Belly IV Therapy</h1>
                     <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto font-light">Fast relief from traveler's diarrhea, dehydration, and stomach discomfort.</p>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-16 md:py-20">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-4">Reclaim Your Holiday from Bali Belly</h2>
+                            <h2 className="text-3xl font-bold text-cyan-800 mb-4">Reclaim Your Holiday from Bali Belly</h2>
                             <p className="text-gray-700 mb-4 text-lg leading-relaxed">Don't let stomach problems ruin your Bali adventure. Bali Belly, a common term for traveler's diarrhea, can quickly lead to dehydration and fatigue. Our specialized IV drip is designed to combat these symptoms directly.</p>
                             <p className="text-gray-700 text-lg leading-relaxed">It rapidly rehydrates your body, replenishes essential electrolytes lost, and delivers anti-nausea medication to quickly calm your stomach, helping you feel better in no time.</p>
                         </div>
@@ -41,7 +41,7 @@ const BaliBellyPage = () => {
                 </div>
             </section>
 
-            <section className="bg-cyan-700 py-16 md:py-20 text-center text-white">
+            <section className="bg-cyan-700 py-12 md:py-16 text-center text-white">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Feel Better?</h2>
                     <p className="mb-8 text-lg max-w-2xl mx-auto font-light">Get professional medical care delivered to your villa or hotel. Book our Bali Belly IV treatment now.</p>

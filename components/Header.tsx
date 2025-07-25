@@ -4,7 +4,7 @@ import { NavLink } from '../types';
 
 const Logo = () => (
   <a href="#home" className="flex items-center">
-    <img src="https://images2.imgbox.com/b3/08/m5zjAOHP_o.png" alt="Mounty Health Center Logo" className="h-12" />
+    <img src="https://images2.imgbox.com/b3/08/m5zjAOHP_o.png" alt="Mounty Health Center Logo" className="h-10" />
   </a>
 );
 
@@ -57,7 +57,7 @@ const Header = (): React.ReactNode => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-3">
+        <div className="flex justify-between items-center py-2">
           <Logo />
           <div className="hidden md:flex items-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
@@ -73,7 +73,7 @@ const Header = (): React.ReactNode => {
       </div>
       <hr />
       <div className="container mx-auto px-4 relative">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           <div className="hidden md:flex flex-grow justify-between items-center">
             <nav>
               <ul className="flex items-center space-x-2">
@@ -82,7 +82,7 @@ const Header = (): React.ReactNode => {
             </nav>
             <div className="flex items-center space-x-4">
               <a href={CONTACT_INFO.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cyan-600"><InstagramIcon /></a>
-              <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-cyan-600 text-white font-bold py-2 px-6 rounded-md hover:bg-cyan-700 transition-colors duration-300 text-sm">
+              <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer" className="bg-cyan-600 text-white font-bold py-2 px-5 rounded-md hover:bg-cyan-700 transition-colors duration-300 text-sm">
                 Book Now
               </a>
             </div>
@@ -113,7 +113,7 @@ const Header = (): React.ReactNode => {
             </div>
         )}
       </div>
-      <div className="bg-cyan-700 text-white text-center py-2 text-sm font-semibold tracking-wider">
+      <div className="bg-cyan-700 text-white text-center py-1.5 text-sm font-semibold tracking-wider">
         24/7 PROFESSIONAL WELLNESS CARE | FREE HOME DELIVERY
       </div>
     </header>

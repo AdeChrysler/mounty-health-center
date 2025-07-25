@@ -37,7 +37,7 @@ const PromotionCard: React.FC<{ promo: Promotion }> = ({ promo }) => {
 
   return (
     <div 
-      className={`relative w-full h-[550px] rounded-xl overflow-hidden shadow-2xl text-white group flex flex-col justify-end p-6 ${cardBgClass}`}
+      className={`relative w-full h-[500px] rounded-xl overflow-hidden shadow-2xl text-white group flex flex-col justify-end p-6 ${cardBgClass}`}
       style={cardStyle}
     >
       <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="relative z-10 w-full bg-white text-cyan-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300 text-center">

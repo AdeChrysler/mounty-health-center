@@ -7,15 +7,15 @@ const MapPinIcon = () => <svg className="w-6 h-6 mr-3 text-cyan-300 flex-shrink-
 const ClockIcon = () => <svg className="w-6 h-6 mr-3 text-cyan-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>;
 const PhoneIcon = () => <svg className="w-6 h-6 mr-3 text-cyan-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.461 4.415a1 1 0 01-.297 1.13l-2.133 2.134a11.047 11.047 0 005.57 5.57l2.134-2.133a1 1 0 011.13-.297l4.415 1.46a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>;
 
-const ProfessionalIcon = () => <svg className="w-12 h-12 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>;
-const AvailabilityIcon = () => <svg className="w-12 h-12 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>;
-const PatientCenteredIcon = () => <svg className="w-12 h-12 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>;
+const ProfessionalIcon = () => <svg className="w-11 h-11 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>;
+const AvailabilityIcon = () => <svg className="w-11 h-11 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>;
+const PatientCenteredIcon = () => <svg className="w-11 h-11 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>;
 
 
 const AboutSection = (): React.ReactNode => {
   return (
     <div id="about" className="bg-white">
-      <section className="py-20">
+      <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-cyan-800 mb-6">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -24,7 +24,7 @@ const AboutSection = (): React.ReactNode => {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-cyan-800 mb-12 text-center">What Sets Us Apart</h2>
             <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
@@ -47,7 +47,7 @@ const AboutSection = (): React.ReactNode => {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
          <div className="container mx-auto px-4 max-w-2xl text-center">
             <GoogleIcon />
             <h2 className="text-3xl font-bold text-cyan-800 mb-4">Trusted by the Community</h2>
@@ -62,7 +62,7 @@ const AboutSection = (): React.ReactNode => {
          </div>
       </section>
 
-      <section className="bg-cyan-800 text-white py-20">
+      <section className="bg-cyan-800 text-white py-16">
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="pr-8">
@@ -85,7 +85,7 @@ const AboutSection = (): React.ReactNode => {
                       Get Directions
                     </a>
                 </div>
-                <div className="h-96 rounded-lg shadow-xl overflow-hidden">
+                <div className="h-80 rounded-lg shadow-xl overflow-hidden">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.8093081594266!2d115.19870897567952!3d-8.709650991339489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2410020033e71%3A0x9c1dfb68c36f45ba!2sApotek%20Mounty%20Health%20Center!5e0!3m2!1sen!2sid!4v1752908824012!5m2!1sen!2sid"
                         className="w-full h-full"

@@ -1,6 +1,7 @@
 
 
 
+
 import React from 'react';
 import { THERAPY_PACKAGES, CONTACT_INFO, WHATSAPP_BOOKING_URL } from '../constants';
 import { ServicePackage } from '../types';
@@ -12,7 +13,7 @@ const CalendarIcon = () => <svg className="w-6 h-6 text-cyan-600" fill="none" st
 const ServiceCard: React.FC<{ service: ServicePackage }> = ({ service }) => {
     return (
     <div
-      className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl text-white group flex flex-col justify-end p-6 sm:p-8 bg-cover bg-center transform hover:-translate-y-2 transition-transform duration-300"
+      className="relative h-[450px] rounded-xl overflow-hidden shadow-2xl text-white group flex flex-col justify-end p-6 sm:p-8 bg-cover bg-center transform hover:-translate-y-2 transition-transform duration-300"
       style={{ backgroundImage: service.imageUrl ? `url(${service.imageUrl})` : undefined }}
     >
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-0 group-hover:from-black/90 transition-all duration-300"></div>
@@ -30,7 +31,7 @@ const ServiceCard: React.FC<{ service: ServicePackage }> = ({ service }) => {
 
 const TherapySection = (): React.ReactNode => {
     return (
-        <section id="therapies" className="bg-white py-20">
+        <section id="therapies" className="bg-white py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 text-center mb-12">VITAMIN THERAPY AT YOUR VILLA OR HOTEL</h2>
                 <div className="flex flex-col lg:flex-row gap-8">

@@ -3,7 +3,7 @@ import { NAV_LINKS, CONTACT_INFO, WHATSAPP_BOOKING_URL } from '../constants';
 
 const Logo = () => (
     <a href="#home" className="inline-block bg-white p-2 rounded-md">
-        <img src="https://images2.imgbox.com/b3/08/m5zjAOHP_o.png" alt="Mounty Health Center Logo" className="h-10" />
+        <img src="https://images2.imgbox.com/b3/08/m5zjAOHP_o.png" alt="Mounty Health Center Logo" className="h-9" />
     </a>
 );
 
@@ -12,7 +12,7 @@ const InstagramIcon = () => <svg className="w-6 h-6" fill="currentColor" viewBox
 const Footer = (): React.ReactNode => {
     return (
         <footer className="bg-gray-800 text-white">
-            <div className="container mx-auto px-4 py-16">
+            <div className="container mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="md:col-span-2 lg:col-span-1">
                         <Logo />

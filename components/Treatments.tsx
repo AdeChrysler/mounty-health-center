@@ -14,7 +14,7 @@ const ICONS: { [key: string]: React.FC } = {
 
 const Treatments = (): React.ReactNode => {
   return (
-    <section id="treatments" className="relative bg-cyan-800 text-white py-20 overflow-hidden">
+    <section id="treatments" className="relative bg-cyan-800 text-white py-16 overflow-hidden">
         <div className="absolute right-0 top-0 bottom-0 w-2/5 bg-black/10 hidden lg:block" aria-hidden="true">
             {/* Decorative background element */}
         </div>
@@ -25,7 +25,7 @@ const Treatments = (): React.ReactNode => {
                     {TREATMENT_TYPES.map(treatment => {
                         const Icon = ICONS[treatment.icon];
                         return (
-                            <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noopener noreferrer" key={treatment.name} className="flex items-center justify-between bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 group">
+                            <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noopener noreferrer" key={treatment.name} className="flex items-center justify-between bg-white p-4 sm:p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transform transition-all duration-300 group">
                                 <div className="flex items-center gap-4 sm:gap-6">
                                     {Icon && <Icon />}
                                     <span className="text-lg sm:text-xl font-semibold text-gray-800">{treatment.name}</span>
