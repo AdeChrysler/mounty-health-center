@@ -64,25 +64,28 @@ export const PROMOTIONS: Promotion[] = [
 
 export const THERAPY_PACKAGES: ServicePackage[] = [
     {
-        headline: 'Beat.\nBali Belly.\nFast.',
-        title: 'BALI BELLY PACKAGES',
+        headline: 'Beat Bali Belly,\nReclaim Your Holiday',
+        title: 'BALI BELLY IV - DIGESTIVE RELIEF',
         description: 'Soothe and recover from traveler\'s stomach issues with our specialized IV therapy, designed to rehydrate and restore balance.',
         icon: 'bali-belly',
-        imageUrl: 'https://images2.imgbox.com/c5/ba/GEafaKHx_o.jpg'
+        imageUrl: 'https://images2.imgbox.com/c5/ba/GEafaKHx_o.jpg',
+        pageId: 'bali-belly'
     },
     {
         headline: 'Hydrate.\nDetox.\nBounce Back.',
         title: 'IMMUNE BOOSTER PACKAGES',
         description: 'Strengthen your body’s defenses with a powerful blend of vitamins and antioxidants to help you stay healthy and vibrant.',
         icon: 'immune-booster',
-        imageUrl: 'https://images2.imgbox.com/d3/55/A9ZvstBm_o.jpg'
+        imageUrl: 'https://images2.imgbox.com/d3/55/A9ZvstBm_o.jpg',
+        pageId: 'immune-booster'
     },
     {
-        headline: 'Refresh Your\nBody, Restore\nYour Mind',
-        title: 'HANGOVER PACKAGES',
+        headline: 'Detox Your Body,\nRehydrate Your Brain',
+        title: 'HANGOVER IV - POST-PARTY FIX',
         description: 'Recover effectively from the night before with our basic, standard, or premium Hangover IV packages, perfect for rapid rehydration at your home or hotel.',
         icon: 'hangover-package',
-        imageUrl: 'https://images2.imgbox.com/1e/20/aMguP9vX_o.jpg'
+        imageUrl: 'https://images2.imgbox.com/1e/20/aMguP9vX_o.jpg',
+        pageId: 'hangover-drip'
     }
 ];
 

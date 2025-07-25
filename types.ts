@@ -18,6 +18,7 @@ export interface ServicePackage {
   description: string;
   icon: string;
   imageUrl?: string;
+  pageId: string;
 }
 
 export interface NewsArticle {

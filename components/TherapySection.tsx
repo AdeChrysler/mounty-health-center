@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import { THERAPY_PACKAGES, CONTACT_INFO, WHATSAPP_BOOKING_URL } from '../constants';
 import { ServicePackage } from '../types';
@@ -8,15 +11,18 @@ const CalendarIcon = () => <svg className="w-6 h-6 text-cyan-600" fill="none" st
 
 const ServiceCard: React.FC<{ service: ServicePackage }> = ({ service }) => {
     return (
-    <div 
-      className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl text-white group flex flex-col justify-end p-6 sm:p-8 bg-cover bg-center"
+    <div
+      className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl text-white group flex flex-col justify-end p-6 sm:p-8 bg-cover bg-center transform hover:-translate-y-2 transition-transform duration-300"
       style={{ backgroundImage: service.imageUrl ? `url(${service.imageUrl})` : undefined }}
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-0"></div>
-      
-      <div className="relative z-10">
-          <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="w-full bg-white text-cyan-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300 text-center inline-block">
-                Book Your Treatment
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-0 group-hover:from-black/90 transition-all duration-300"></div>
+
+        <div className="relative z-10">
+            <a
+                href={`#/${service.pageId}`}
+                className="w-full bg-white text-cyan-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300 text-center inline-block"
+            >
+                View Treatment
             </a>
       </div>
     </div>
@@ -35,7 +41,7 @@ const TherapySection = (): React.ReactNode => {
                             ))}
                         </div>
                     </div>
-                    <aside className="lg:w-1/4 bg-gray-50 p-8 rounded-lg shadow-md">
+                    <aside className="lg:w-1/4 bg-gray-50 p-8 rounded-lg shadow-md self-start">
                         <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6 border-b-2 border-cyan-200 pb-2">WORKING HOURS</h3>
                         <div className="flex justify-between items-center mb-8">
                             <span>Mon - Sunday</span>
