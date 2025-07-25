@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import { NEWS_ARTICLES } from '../constants';
 import { NewsArticle } from '../types';
@@ -39,7 +40,7 @@ const NewsCard: React.FC<{ article: NewsArticle }> = ({ article }) => {
 
 const LatestNews = (): React.ReactNode => {
     return (
-        <section id="latest-news" className="bg-gray-50 py-16">
+        <section className="bg-gray-50 py-16">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-12">
                     <h2 className="text-3xl font-bold text-cyan-800 mb-4">LATEST NEWS</h2>

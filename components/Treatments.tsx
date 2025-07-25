@@ -14,7 +14,7 @@ const ICONS: { [key: string]: React.FC } = {
 
 const Treatments = (): React.ReactNode => {
   return (
-    <section id="treatments" className="relative bg-cyan-800 text-white py-16 overflow-hidden">
+    <section className="relative bg-cyan-800 text-white py-16 overflow-hidden">
         <div className="absolute right-0 top-0 bottom-0 w-2/5 bg-black/10 hidden lg:block" aria-hidden="true">
             {/* Decorative background element */}
         </div>

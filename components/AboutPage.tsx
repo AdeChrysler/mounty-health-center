@@ -14,7 +14,7 @@ const PatientCenteredIcon = () => <svg className="w-11 h-11 text-cyan-600" fill=
 
 const AboutSection = (): React.ReactNode => {
   return (
-    <div id="about" className="bg-white">
+    <div className="bg-white">
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-cyan-800 mb-6">Our Mission</h2>

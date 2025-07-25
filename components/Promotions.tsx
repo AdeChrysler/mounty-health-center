@@ -123,7 +123,7 @@ const Promotions = (): React.ReactNode => {
     const displaySlides = isLooping ? slides : promos;
 
     return (
-        <section id="promotions" className="py-16 bg-white">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-4">
                 <div className="relative">
                     <div className="overflow-hidden">
