@@ -10,8 +10,8 @@ const FloatingWidgets = (): React.ReactNode => {
     return (
         <>
             {/* Social Media Bar */}
-            <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center">
-                <a href={CONTACT_INFO.instagram} target="_blank" rel="noopener noreferrer" className="bg-cyan-700 hover:bg-cyan-800 text-white p-3 transition-colors duration-300 rounded-r-lg">
+            <div className="fixed right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center">
+                <a href={CONTACT_INFO.instagram} target="_blank" rel="noopener noreferrer" className="bg-cyan-700 hover:bg-cyan-800 text-white p-3 transition-colors duration-300 rounded-l-lg">
                     <InstagramIcon />
                 </a>
             </div>
