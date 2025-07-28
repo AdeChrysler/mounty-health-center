@@ -43,31 +43,6 @@ function App(): React.ReactNode {
 
   // Effect for scrolling to sections on the HomePage
   useEffect(() => {
-    // Custom smooth scroll function with ease-in-out effect
-    const smoothScrollTo = (targetY: number, duration: number) => {
-      const startY = window.pageYOffset;
-      const distance = targetY - startY;
-      let startTime: number | null = null;
-
-      const easeInOutQuad = (t: number, b: number, c: number, d: number): number => {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-      };
-
-      const animation = (currentTime: number) => {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        window.scrollTo(0, easeInOutQuad(timeElapsed, startY, distance, duration));
-        if (timeElapsed < duration) {
-          requestAnimationFrame(animation);
-        }
-      };
-
-      requestAnimationFrame(animation);
-    };
-
     // Only scroll if it's a section hash (not a page route)
     if (currentPath.startsWith('#') && !routes[currentPath]) {
       const id = currentPath.substring(1);
@@ -89,14 +64,20 @@ function App(): React.ReactNode {
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const offsetPosition = elementPosition - headerOffset;
           
-          smoothScrollTo(offsetPosition, 2000); // 2000ms = 2 seconds
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
           
           // Remove the no-transition class after a moment, so that fade-in works for subsequent manual scrolling.
           setTimeout(() => {
             element?.classList.remove('no-transition');
           }, 50);
         } else if (id === 'home' || currentPath === '#') {
-          smoothScrollTo(0, 2000); // Scroll to top for home
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
         }
       }, scrollDelay);
     }
